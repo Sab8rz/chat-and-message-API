@@ -1,0 +1,36 @@
+__pycache__/
+*.pyc
+
+# PyCharm-specific files
+/.idea/
+.idea/
+.DS_Store
+
+# Other files
+.env
+
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+
+# Backup files #
+*.bak
+
+# Other sensitive files
+.idea/**/dataSources/
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Virtual environment
+venv/
+djvenv/
+.env
+
+# Build artifacts
+build/
+dist/
