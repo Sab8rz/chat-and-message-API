@@ -76,9 +76,15 @@
 5. **API будет доступно по адресу:** http://localhost:8000/api/
 
 ## Эндпоинты
-#### http://localhost:8000/api/chats/: `POST` — создать чат 
-#### http://localhost:8000/api/chats/{id}/messages/: `POST` — отправить сообщение в чат 
-#### http://localhost:8000/api/chats/{id}/: `GET` — получить чат и последние N сообщений 
-#### http://localhost:8000/api/chats/{id}/: `DELETE` — удалить чат вместе со всеми сообщениями 
+> #### http://localhost:8000/api/chats/: `POST` — создать чат 
+> #### http://localhost:8000/api/chats/{id}/messages/: `POST` — отправить сообщение в чат 
+> #### http://localhost:8000/api/chats/{id}/: `GET` — получить чат и последние N сообщений 
+>  > #### http://localhost:8000/api/chats/{id}/?limit={n}: - указать лимит необходимо на месте`{n}` 
+> #### http://localhost:8000/api/chats/{id}/: `DELETE` — удалить чат вместе со всеми сообщениями 
 
+## Тесты
+Запуск юнит-тестов:
+```bash
+docker compose exec web python -m pytest ChatAndMessage/api/tests/ -v --ds=ChatAndMessage.settings
+```
 
